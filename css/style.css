@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+}
+
+
+
+
+h3{
+    font-size: 10px;
+    color: rgb(227, 130, 12);
+}
+
+
+
+.container_hero{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    height: 762px;
+    background-image: url(../img/h1_hero1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero{
+    text-align: end;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.hero_title{
+    font-size: 20px;
+    color: #fefefe;
+    margin-top: 200px;
+    
+}
+
+.hero_call{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 15px;
+    height: 60px;
+    background-color: rgba(225, 158, 58, 0.5);
+
+}
+
+.hero_call a{
+    color: #fefefe;
+}
+
+
+
+body {
+    background-color: #fefefe;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar.active {
+    height: 450px;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #11101b;
+    background-color: #fefefe;
+}
+
+.nav-bar ul li a.active {
+    color: #11101b;
+    background-color: #fefefe;
+}
+
+
+/* Responsive Mobile*/
+
+@media screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media screen and(max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #242426fd;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 350px;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .container_hero{
+
+        background-image: url(../img/h1_hero.png);
+
+    }
+    
+    
+}
+
+
+/*Fin navbar*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color:  #222222;
+    margin-top: 10px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color:rgba(225, 158, 58, 0.5);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color:rgba(225, 158, 58, 0.5);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
