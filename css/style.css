@@ -242,6 +242,147 @@ grid-template-rows: 1fr;
 /* fin about*/
 
 
+
+
+
+
+
+
+
+/*--- team ---*/
+#team {
+	position: relative;
+	padding-top: 100px;
+}
+.team-desc {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.team-item {
+	text-align: center;
+}
+.team-item img {
+	width: 100%;
+}
+.name {
+	position: relative;
+	background: #fff;
+	border-radius: 4px;
+	width: 230px;
+	margin: 0 auto;
+	bottom: 40px;
+	padding: 15px 0;
+	font-size: 25px;
+	font-weight: 700;
+	color: #000;
+}
+.spec {
+	position: relative;
+	bottom: 40px;
+}
+.social i {
+	color: #DCB155;
+	margin: 0 8px;
+}
+#team .scroll-line {
+	top: 520px;
+	border: 1px solid #DCB155;
+}
+#team .scroll-span {
+	top: 650px;
+	left: 35px;
+	color: #DCB155;
+}
+
+
+
+
+
+
+/*--- responsive ---*/
+@media (max-width: 1024.08px) {
+
+	}
+	.scroll-line, .scroll-span, .social-line, .social-v {
+		display: none;
+	}
+	#about {
+		background: none;
+	}
+	.services-desc {
+		float: right;
+		width: 55%;
+	}
+
+
+@media (max-width: 575.98px) {
+
+	.service-item {
+		text-align: center;
+	}
+	.services-desc {
+		width: 100%;
+	}
+	.services-img {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 35px;
+	}
+	.services-desc p {
+		margin-bottom: 2rem;
+	}
+	.services-desc span {
+		padding: 9px 45px;
+	}
+
+	#team {
+		padding-top: 70px;
+	}
+	.team-desc {
+		padding: 0 8%;
+	}
+	.name {
+		bottom: 30px;
+	}
+	#team .social {
+		position: relative;
+    	bottom: 50px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Contacto*/
 
 .container {
